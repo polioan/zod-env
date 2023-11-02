@@ -1,0 +1,68 @@
+{
+  "name": "@polioan/zod-env",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ivan Polushin",
+    "url": "https://t.me/polioan"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/polioan/zod-env"
+  },
+  "homepage": "https://github.com/polioan/zod-env#readme",
+  "bugs": {
+    "url": "https://github.com/polioan/zod-env/issues"
+  },
+  "funding": "https://boosty.to/polioan",
+  "keywords": [
+    "zod",
+    "env",
+    "dotenv"
+  ],
+  "description": "Parsing .env using Zod",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup --config rollup.config.mjs",
+    "test:types": "tsc --noEmit",
+    "test:unit": "vitest --dir \"test\" --run --passWithNoTests",
+    "test": "npm run test:types && npm run test:unit",
+    "coverage": "vitest --dir \"test\" run --coverage",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "peerDependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/node": "^20.8.10",
+    "@vitest/coverage-v8": "^0.34.6",
+    "prettier": "^3.0.3",
+    "prettier-plugin-jsdoc": "^1.1.1",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.2.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6",
+    "zod": "^3.22.4"
+  }
+}

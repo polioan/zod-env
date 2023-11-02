@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "sourceMap": false,
+    "incremental": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "lib": ["ESNext", "DOM"],
+    "plugins": [],
+
+    "allowJs": true,
+    "checkJs": true,
+
+    "alwaysStrict": true,
+    "useDefineForClassFields": true,
+
+    "removeComments": false,
+    "noEmit": true,
+    "declaration": false,
+
+    "stripInternal": true,
+
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitOverride": true,
+
+    "verbatimModuleSyntax": true
+  },
+  "include": ["src", "test", ".prettierrc.cjs", "rollup.config.mjs"],
+  "exclude": ["node_modules"]
+}
